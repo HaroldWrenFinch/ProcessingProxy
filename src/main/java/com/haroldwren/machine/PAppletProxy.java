@@ -1,4 +1,4 @@
-package hu.bp.jack.processing;
+package com.haroldwren.machine;
 
 import processing.core.PApplet;
 
