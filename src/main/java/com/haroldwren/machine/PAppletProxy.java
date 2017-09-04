@@ -196,6 +196,13 @@ public class PAppletProxy {
         return null;
     }
 
+    public Integer random(int low, int high) {
+        if(this.checkPApplet()) {
+            return (int)this.pApplet.random(low, high);
+        }
+        return null;
+    }
+
     /**
      * draw a rectangle
      *
