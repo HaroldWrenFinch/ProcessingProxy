@@ -440,6 +440,23 @@ public class PAppletProxy {
         this.givenWidth = givenWidth;
     }
 
+    public void coloredRectangle(float xPos, float yPos, float width, float height, float radius, int color) {
+        if(this.checkPApplet()) {
+            pApplet.fill(color);
+            pApplet.rect(xPos, yPos, width, height, radius);
+        }
+    }
+
+    public void coloredText(String text, float xPos, float yPos, float width, float height, int color, float textSize, int textAlign) {
+        if(this.checkPApplet()) {
+            pApplet.fill(color);
+            pApplet.textAlign(textAlign);
+            pApplet.textSize(textSize);
+            pApplet.text(text, xPos, yPos, width, height);
+        }
+    }
+
+
     /**
      * check if PApplet not null.
      *
